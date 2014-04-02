@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico"> -->
+    <title>{{ site.name }} - {{ page.title }}</title>
+    <!-- Bootstrap core CSS -->
+    <link href='//fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" media="screen" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Droid+Sans+Mono" media="screen" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic" media="screen" rel="stylesheet" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link href="/css/extra.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="{{ page.body_class }}">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1418343218413412";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div role="navigation" class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand">{{ site.name }}</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav nav-pills navbar-nav navbar-right">
+            <li{% if page.body_class == 'home' %} class="active"{% endif %}><a href="/">Home</a></li>
+            <li{% if page.body_class == 'speakers' %} class="active"{% endif %}><a href="/speakers.html">Speakers</a></li>
+            <li{% if page.body_class == 'venue' %} class="active"{% endif %}><a href="/venue.html">Venue</a></li>
+            <li{% if page.body_class == 'about' %} class="active"{% endif %}><a href="/about.html">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>
+          <span class="even-smaller">16-17-18 June 2014</span>
+          <br/>
+          <span class="smaller">Lahr, Black Forest</span>
+        </h1>
+        <!-- <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p> -->
+        <!-- <p><a class="btn btn-lg btn-success" href="http://getbootstrap.com/examples/jumbotron-narrow/#" role="button">Sign up today</a></p> -->
+      </div>
+
+      {{ content }}
+
+    </div> <!-- /container -->
+    {% include footer.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

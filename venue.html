@@ -1,0 +1,21 @@
+---
+layout: default
+title: Venue
+body_class: venue
+---
+
+<div class="row">
+  <div class="col-lg-12">
+    <h1>Venue</h1>
+  </div>
+</div>
+<div class="row">
+  {% for item in (1..6) %}
+  <div class="col-xs-6 col-md-6">
+    <a href="/img/photo_{{item}}.jpg" class="thumbnail">
+      <img data-src="/img/photo_{{item}}.jpg" alt="Photo {{item}}">
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
