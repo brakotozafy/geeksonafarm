@@ -60,9 +60,10 @@ footer {
   footer h3 {
     padding-bottom: 10px;
     border-bottom: 1px solid #cccccc; }
-  footer .posts .links {
-    text-transform: uppercase;
-    color: #3da819; }
+
+.post .links {
+  text-transform: uppercase;
+  color: #3da819; }
 
 a, a:hover, a:visited, a:focus {
   color: #3da819; }
@@ -116,3 +117,12 @@ a, a:hover, a:visited, a:focus {
     left: 0;
     width: 100%;
     height: 100%; }
+
+.blog .posts .row > .col-lg-12 {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #cccccc; }
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  border-color: #3da819;
+  background-color: #3da819; }
