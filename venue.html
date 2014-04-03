@@ -13,7 +13,7 @@ body_class: venue
   {% for item in (1..6) %}
   <div class="col-xs-6 col-md-6">
     <a href="/img/photo_{{item}}.jpg" class="thumbnail">
-      <img data-src="/img/photo_{{item}}.jpg" alt="Photo {{item}}">
+      <img data-src="/img/photo_{{item}}.jpg" alt="Photo {{item}}" src="/img/photo_{{item}}.jpg" style="height:192px;">
     </a>
   </div>
   {% endfor %}
