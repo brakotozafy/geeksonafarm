@@ -2,17 +2,17 @@
   <div class="container">
   <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-4">
-      <h3>Latest Tweets</h2>
+      <h3><a href="https://twitter.com/geeksonafarm" target="_blank">Latest Tweets</a></h2>
       <a class="twitter-timeline"  href="https://twitter.com/geeksonafarm"  data-widget-id="451359998925230080">Tweets by @geeksonafarm</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4">
-      <h3>Last Blogpost</h2>
+      <h3><a href="/blog.html" target="_blank">Last Blogpost</a></h2>
       <ul class="posts list-unstyled">
         {% for post in site.posts | limit:5 %}
           <li>
             <h4>{{ post.title }}</h3>
-            <p></p>
+            <p>{{ post.excerpt | truncate:130 }}</p>
             <ul class="list-inline links">
               <li>{{ post.date | date_to_string }}</li>
               <li>|</li>
@@ -24,7 +24,7 @@
 
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4">
-      <h3>Follow us on Facebook</h2>
+      <h3><a href="https://www.facebook.com/geeksonafarm" target="_blank">Follow us on Facebook</a></h2>
       <div class="fb-like-box" data-href="https://www.facebook.com/geeksonafarm" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>    </div>
   </div>
   <div class="row">
@@ -36,6 +36,7 @@
       <div class="pull-right">
         <a href="https://www.facebook.com/geeksonafarm">Facebook</a>
         <a href="https://twitter.com/geeksonafarm">Twitter</a>
+        <a href="/imprint.html">Imprint</a>
       </div>
     </div>
   </div>

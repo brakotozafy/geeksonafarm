@@ -50,6 +50,8 @@ body {
 
 h1, h2, h3, h4, h5 {
   color: #3da819; }
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
+    text-decoration: none; }
 
 footer {
   background-color: #f9f9f9;
