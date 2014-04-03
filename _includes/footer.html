@@ -12,7 +12,7 @@
         {% for post in site.posts | limit:5 %}
           <li class="post">
             <h4>{{ post.title }}</h4>
-            <p>{{ post.excerpt | truncate:130 }}</p>
+            {{ post.excerpt | truncate:130 }}
             <ul class="list-inline links">
               <li>{{ post.date | date_to_string }}</li>
               <li>|</li>
