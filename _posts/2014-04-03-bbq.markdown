@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "BBQ! BBQ!"
+date:   2014-04-03 11:00:00
+---
+
+Of course you will learn new things and meet new people at Geeks On A Farm. But what will you truely learn about you? We don't know yet, but for sure there will be a BBQ!
+
+![BBQ!](/img/bbq.jpg)
+
