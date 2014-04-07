@@ -1,0 +1,28 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Geeks on a farm redirection</title>
+    <link rel="canonical" href="http://www.geeksonafarm.com/index.html"/>
+    <noscript>
+    <meta http-equiv="refresh" content="0;URL=http://www.geeksonafarm.com/index.html">
+    </noscript>
+    <script type="text/javascript">
+        var url = "http://www.geeksonafarm.com/index.html";
+
+        // IE8 and lower fix
+        if (navigator.userAgent.match(/MSIE\s(?!9.0)/))
+        {
+            var referLink = document.createElement("a");
+            referLink.href = url;
+            document.body.appendChild(referLink);
+            referLink.click();
+        }
+
+        // All other browsers
+        else { window.location.replace(url); }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
