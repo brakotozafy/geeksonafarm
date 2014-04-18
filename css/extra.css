@@ -5,6 +5,30 @@ header {
   background: url("/img/goaf.jpg") repeat-x top center;
   height: 542px; }
 
+.btn-calltoaction {
+  background: linear-gradient(to right, #4a90cc 0%, #4a90cc 30%, #285e8e 31.1%, #3276b1 31.2%, #3276b1 100%);
+  border-color: #285e8e;
+  color: white !important;
+  outline: 0 none; }
+  .btn-calltoaction:hover, .btn-calltoaction:focus, .btn-calltoaction:active {
+    background: linear-gradient(to right, #4a90cc 0%, #4a90cc 30%, #285e8e 31.1%, #3276b1 31.2%, #3276b1 100%);
+    border-color: #285e8e;
+    color: white !important;
+    outline: 0 none; }
+  .btn-calltoaction .price {
+    margin-right: 40px; }
+    .btn-calltoaction .price small {
+      font-size: 60%;
+      display: block;
+      margin-bottom: -4px;
+      margin-top: 3px; }
+    .btn-calltoaction .price strong {
+      font-size: 145%; }
+  .btn-calltoaction .title {
+    margin-top: -3px; }
+    .btn-calltoaction .title strong {
+      font-size: 110%; }
+
 .navbar-default .navbar-nav > li > a {
   color: white;
   font-size: 22px; }
@@ -152,7 +176,7 @@ a, a:hover, a:visited, a:focus {
     left: 0; } }
 @media screen and (max-width: 999px) {
   .jumbotron {
-    top: 100px; }
+    top: 20px; }
 
   header {
     background-position: center bottom;
@@ -207,3 +231,6 @@ a, a:hover, a:visited, a:focus {
       width: 100%;
       color: white;
       text-align: center; } }
+@media screen and (max-width: 767px) {
+  .jumbotron {
+    top: 100px; } }

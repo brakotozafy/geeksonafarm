@@ -45,6 +45,7 @@
             <li{% if page.body_class == 'venue' %} class="active"{% endif %}><a href="/venue.html">Venue</a></li>
             <li{% if page.body_class == 'about' %} class="active"{% endif %}><a href="/about.html">About</a></li>
           </ul>
+          <p class="visible-xs text-center" style="margin-top:10px;">{% include calltoaction.html %}</p>
         </div><!--/.nav-collapse -->
       </div>
     </div>
@@ -57,6 +58,9 @@
             <br/>
             <span class="smaller">Lahr, Black Forest</span>
           </h1>
+          <p style="margin-top:20px;" class="hidden-xs">
+          {% include calltoaction.html %}
+          </p>
         </div>
       </div>
     </header>

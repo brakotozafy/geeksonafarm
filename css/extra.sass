@@ -17,6 +17,31 @@ header
   background: url('/img/goaf.jpg') repeat-x top center
   height: 542px
 
+
+.btn-calltoaction
+  background: linear-gradient(to right, #4a90cc 0%, #4a90cc 30%, #285E8E 31.1%, #3276B1 31.2%, #3276B1 100%)
+  border-color: #285E8E
+  color: #FFFFFF !important
+  outline: 0 none
+  &:hover, &:focus, &:active
+    background: linear-gradient(to right, #4a90cc 0%, #4a90cc 30%, #285E8E 31.1%, #3276B1 31.2%, #3276B1 100%)
+    border-color: #285E8E
+    color: #FFFFFF !important
+    outline: 0 none
+  .price
+    margin-right: 40px
+    small
+      font-size: 60%
+      display: block
+      margin-bottom: -4px
+      margin-top: 3px
+    strong
+      font-size: 145%
+  .title
+    margin-top: -3px
+    strong
+      font-size: 110%
+
 .navbar-default .navbar-nav > li > a
   color: white
   font-size: 22px
@@ -173,7 +198,7 @@ a, a:hover, a:visited, a:focus
 
 @media screen and (max-width: 999px)
   .jumbotron
-    top: 100px
+    top: 20px
 
   header
     background-position: center bottom
@@ -226,3 +251,7 @@ a, a:hover, a:visited, a:focus
       width: 100%
       color: white
       text-align: center
+
+@media screen and (max-width: 767px)
+  .jumbotron
+    top: 100px
