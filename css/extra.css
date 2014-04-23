@@ -163,6 +163,11 @@ a, a:hover, a:visited, a:focus {
   border-color: #3da819;
   background-color: #3da819; }
 
+.speaker {
+  margin-top: 40px; }
+  .speaker h2 {
+    margin-top: 0; }
+
 @media screen and (min-width: 1000px) {
   .navbar {
     margin-bottom: 0;
