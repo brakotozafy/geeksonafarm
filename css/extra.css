@@ -159,6 +159,13 @@ a, a:hover, a:visited, a:focus {
   margin-bottom: 15px;
   border-bottom: 1px solid #cccccc; }
 
+.post .thumbnail {
+  border: 0; }
+  .post .thumbnail img {
+    height: 100px; }
+  .post .thumbnail .caption {
+    text-align: center; }
+
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
   border-color: #3da819;
   background-color: #3da819; }
@@ -167,6 +174,9 @@ a, a:hover, a:visited, a:focus {
   margin-top: 40px; }
   .speaker h2 {
     margin-top: 0; }
+
+.price-list.table tr td {
+  padding: 20px; }
 
 @media screen and (min-width: 1000px) {
   .navbar {
