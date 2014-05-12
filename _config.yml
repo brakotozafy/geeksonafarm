@@ -3,3 +3,13 @@ markdown: redcarpet
 pygments: true
 paginate: 5
 paginate_path: "blog/page:num"
+speakers:
+  - Florence Remy
+  - Ralf Allrutz
+  - Frank Manuel Saviane
+  - Markus Schranner
+  - Minna Janhonen
+  - Tim Jaudszims
+  - Christian Renner
+  - Guido Hegener
+  - Willy Braun

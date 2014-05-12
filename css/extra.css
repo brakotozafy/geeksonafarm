@@ -174,6 +174,16 @@ a, a:hover, a:visited, a:focus {
   margin-top: 40px; }
   .speaker h2 {
     margin-top: 0; }
+  .speaker img {
+    max-width: 100%; }
+
+.row.speakers .speaker_hp {
+  padding-left: 0; }
+  .row.speakers .speaker_hp .thumbnail {
+    padding: 0;
+    border: 0; }
+  .row.speakers .speaker_hp img {
+    width: 250px; }
 
 .price-list.table tr td {
   padding: 20px; }
