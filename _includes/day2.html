@@ -1,121 +1,138 @@
-<div class="tab-pane" id="day2">
-
-  <table class="table table-bordered">
-    <tbody>
-      <tr>
-        <td style="width:50px;">8h00</td>
-        <td colspan="2" rowspan="4">Breakfast</td>
-      </tr>
-      <tr>
-        <td>8h30</td>
-      </tr>
-      <tr>
-        <td>9h00</td>
-      </tr>
-      <tr>
-        <td>9h30</td>
-      </tr>
-      <tr>
-        <td>10h00</td>
-        <td rowspan="2" colspan="2">
-          Speaker I
-        </td>
-      </tr>
-      <tr>
-        <td>10h30</td>
-      </tr>
-      <tr>
-        <td>11h00</td>
-        <td rowspan="2" colspan="2">Speaker II</td>
-      </tr>
-      <tr>
-        <td>11h30</td>
-      </tr>
-      <tr>
-        <td>12h00</td>
-        <td rowspan="4" colspan="2">Lunch</td>
-      </tr>
-      <tr>
-        <td>12h30</td>
-      </tr>
-      <tr>
-        <td>13h00</td>
-      </tr>
-      <tr>
-        <td>13h30</td>
-      </tr>
-      <tr>
-        <td>14h00</td>
-        <td rowspan="2" colspan="2">Panel discussion III</td>
-      </tr>
-      <tr>
-        <td>14h30</td>
-      </tr>
-      <tr>
-        <td>15h00</td>
-        <td rowspan="2" colspan="2">Panel discussion IV</td>
-      </tr>
-      <tr>
-        <td>15h30</td>
-      </tr>
-      <tr>
-        <td>16h00</td>
-        <td rowspan="2" colspan="2">Coffee break</td>
-      </tr>
-      <tr>
-        <td>16h30</td>
-      </tr>
-      <tr>
-        <td>17h00</td>
-        <td rowspan="2">Workshop V</td>
-        <td rowspan="2">Workshop VI</td>
-      </tr>
-      <tr>
-        <td>17h30</td>
-      </tr>
-      <tr>
-        <td>18h00</td>
-        <td rowspan="2">Workshop VII</td>
-        <td rowspan="2">Workshop VIII</td>
-      </tr>
-      <tr>
-        <td>18h30</td>
-      </tr>
-      <tr>
-        <td>19h00</td>
-        <td rowspan="2" colspan="2">Break</td>
-      </tr>
-      <tr>
-        <td>19h30</td>
-      </tr>
-      <tr>
-        <td>20h00</td>
-        <td rowspan="3" colspan="2">BBQ</td>
-      </tr>
-      <tr>
-        <td>20h30</td>
-      </tr>
-      <tr>
-        <td>21h00</td>
-      </tr>
-      <tr>
-        <td>21h30</td>
-        <td colspan="2"></td>
-      </tr>
-      <tr>
-        <td>22h00</td>
-        <td rowspan="4" colspan="2">Night activities TBD</td>
-      </tr>
-      <tr>
-        <td>22h30</td>
-      </tr>
-      <tr>
-        <td>23h00</td>
-      </tr>
-      <tr>
-        <td>00h00</td>
-      </tr>
-    </tbody>
-  </table>
-
-</div>
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <td>8h00</td>
+      <td colspan="2" rowspan="4"><i class="fa fa-cutlery"></i> Breakfast</td>
+    </tr>
+    <tr>
+      <td>8h30</td>
+    </tr>
+    <tr>
+      <td>9h00</td>
+    </tr>
+    <tr>
+      <td>9h30</td>
+    </tr>
+    <tr>
+      <td>10h00</td>
+      <td rowspan="2" colspan="2">
+        <i class="fa fa-bullhorn" title="speaker"></i> Pretotyping
+        <br/>
+        {% assign item = 'Ralf Allrutz' %}
+        {% include speaker.html %}
+      </td>
+    </tr>
+    <tr>
+      <td>10h30</td>
+    </tr>
+    <tr>
+      <td>11h00</td>
+      <td rowspan="2" colspan="2">
+        <i class="fa fa-comments" title="panel discussion"></i> How accelerators works throughout Europe?
+        <br/>
+        {% assign item = 'Minna Janhonen' %}
+        {% include speaker.html %}
+        {% assign item = 'Frank Manuel Saviane' %}
+        {% include speaker.html %}
+        {% assign item = 'Christian Renner' %}
+        {% include speaker.html %}
+      </td>
+    </tr>
+    <tr>
+      <td>11h30</td>
+    </tr>
+    <tr>
+      <td>12h00</td>
+      <td rowspan="4" colspan="2"><i class="fa fa-cutlery"></i> Lunch</td>
+    </tr>
+    <tr>
+      <td>12h30</td>
+    </tr>
+    <tr>
+      <td>13h00</td>
+    </tr>
+    <tr>
+      <td>13h30</td>
+    </tr>
+    <tr>
+      <td>14h00</td>
+      <td rowspan="2" colspan="2">
+        <i class="fa fa-briefcase" title="Workshop"></i> Term sheets
+        <br/>
+        {% assign item = 'Frank Manuel Saviane' %}
+        {% include speaker.html %}
+      </td>
+    </tr>
+    <tr>
+      <td>14h30</td>
+    </tr>
+    <tr>
+      <td>15h00</td>
+      <td rowspan="2" colspan="2">
+        <i class="fa fa-briefcase" title="Workshop"></i> Growth Hacking
+      </td>
+    </tr>
+    <tr>
+      <td>15h30</td>
+    </tr>
+    <tr>
+      <td>16h00</td>
+      <td colspan="2"><i class="fa fa-coffee"></i> Coffee break</td>
+    </tr>
+    <tr>
+      <td>16h30</td>
+      <td rowspan="2" colspan="2">
+        <i class="fa fa-briefcase" title="Workshop"></i> Lean Startup
+      </td>
+    </tr>
+    <tr>
+      <td>17h00</td>
+    </tr>
+    <tr>
+      <td>17h30</td>
+      <td rowspan="2" colspan="2">
+        <i class="fa fa-briefcase" title="Workshop"></i> Introduction to Design Thinking
+      </td>
+    </tr>
+    <tr>
+      <td>18h00</td>
+    </tr>
+    <tr>
+      <td>18h30</td>
+      <td rowspan="3" colspan="2"><i class="fa fa-glass"></i> Wine tasting</td>
+    </tr>
+    <tr>
+      <td>19h00</td>
+    </tr>
+    <tr>
+      <td>19h30</td>
+    </tr>
+    <tr>
+      <td>20h00</td>
+      <td rowspan="3" colspan="2"><i class="fa fa-cutlery"></i> BBQ</td>
+    </tr>
+    <tr>
+      <td>20h30</td>
+    </tr>
+    <tr>
+      <td>21h00</td>
+    </tr>
+    <tr>
+      <td>21h30</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>22h00</td>
+      <td rowspan="4" colspan="2">Night activities TBD</td>
+    </tr>
+    <tr>
+      <td>22h30</td>
+    </tr>
+    <tr>
+      <td>23h00</td>
+    </tr>
+    <tr>
+      <td>00h00</td>
+    </tr>
+  </tbody>
+</table>
